@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/bTwitter"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="@color/colorButtons"
+        android:drawableLeft="@drawable/ic_home_twitter"
+        android:paddingLeft="15dp"
+        android:text="Create Personalized List"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:id="@+id/bRandom"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="@color/colorButtons"
+        android:drawableLeft="@drawable/ic_home_random"
+        android:paddingLeft="15dp"
+        android:text="randomize"
+        android:textAlignment="center"
+        android:layout_below="@+id/bTwitter"
+        android:layout_alignLeft="@+id/bTwitter"
+        android:layout_alignStart="@+id/bTwitter"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:id="@+id/bSubmitNew"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="@color/colorButtons"
+        android:drawableLeft="@drawable/ic_home_submit"
+        android:paddingLeft="15dp"
+        android:text="Submit New Food Establishment"
+        android:textAlignment="center"
+        android:layout_below="@+id/bRandom"
+        android:layout_alignLeft="@+id/bRandom"
+        android:layout_alignStart="@+id/bRandom"
+        android:layout_marginTop="32dp"
+        />
+
+    <WebView
+        android:id="@+id/twitterWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/suggestionBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

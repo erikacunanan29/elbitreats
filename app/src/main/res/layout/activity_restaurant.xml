@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="elbitreats.nikki.elbitreats.RestaurantActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/foodestablishmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorButtons"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <RatingBar
+        android:id="@+id/usersRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:layout_below="@+id/foodestablishmentName"
+        android:layout_toLeftOf="@+id/ratingDetails"
+        android:layout_toStartOf="@+id/ratingDetails" />
+
+    <TextView
+        android:id="@+id/ratingDetails"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00 (n ratings)"
+        android:paddingLeft="5dp"
+        android:layout_alignTop="@+id/usersRating"
+        android:layout_alignLeft="@+id/userRating"
+        android:layout_alignStart="@+id/userRating" />
+
+    <Button
+        android:id="@+id/favoriteButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:background="@color/colorButtons"
+        android:textColorLink="@android:color/background_light"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/ratingDetails"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/userRating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/favoriteButton"
+        android:layout_alignRight="@+id/favoriteButton"
+        android:layout_below="@+id/favoriteButton"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:stepSize=".5" />
+
+    <TextView
+        android:id="@+id/userratingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/favoriteButton"
+        android:layout_alignStart="@+id/favoriteButton"
+        android:layout_alignTop="@+id/userRating"
+        android:text="Your rating:" />
+
+    <TabHost
+        android:id="@+id/restoTabs"
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/userratingText"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/layout0"
+                    layout="@layout/establishment_map"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content">
+                </include>
+
+                <include
+                    android:id="@+id/layout1"
+                    layout="@layout/establishment_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+                <include
+                    android:id="@+id/layout2"
+                    layout="@layout/estabilshment_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+
+                <include
+                    android:id="@+id/layout3"
+                    layout="@layout/establishment_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></include>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

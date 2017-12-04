@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ElbiTreats</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_suggestion">SuggestionActivity</string>
+
+    <string-array name="establishmentsOption">
+        <item>Alphabetical</item>
+        <item>Food Establishment Type</item>
+        <item>Food Ethnicity</item>
+        <item>Frequently Visited</item>
+        <item>Location</item>
+        <item>Price Range</item>
+        <item>Rating</item>
+    </string-array>
+
+    <string-array name="menuOption">
+        <item>Menu Category</item>
+        <item>Alphabetical</item>
+        <item>Best Seller</item>
+        <item>Main Ingredient</item>
+        <item>Price</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

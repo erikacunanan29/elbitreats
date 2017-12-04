@@ -1,0 +1,47 @@
+ADD THIS WHEN USER RATING IS ADDED
+
+    $usersRating;
+    $usersCount;
+    if (mysqli_num_rows($getratingsResult) > 1) {
+        $ratingTotal = 0;
+        while ($row = mysqli_fetch_assoc($getratingsResult)) {
+            $ratingTotal = $ratingTotal + $row["rating"];
+        }
+        $usersRating = $ratingTotal/mysqli_num_rows($getratingsResult);
+        $usersCount = mysqli_num_rows($getratingsResult);
+    } else if (mysqli_num_rows($getratingsResult) == 1) {
+        $row = mysqli_fetch_assoc($getratingsResult);
+        $usersRating = $row["rating"];
+        $usersCount = 1;
+    } else {
+        $usersRating = 5;
+        $usersCount = 0;
+    }
+
+FIND US
+    ADDRESS
+STORY ICON (?) - DESCRIPTION
+TIME ICON - HOURS & DAYS CLOSED
+INFO ICON - BUSINESS INFORMATION
+    TYPE
+    ETHNIC
+    PRICE_RANGE
+    PAYMENT_TYPE
+    OTHER_SERVICES
+CONTACT ICON - CONTACT INFORMATION
+    CONTACT_NO
+    EMAIL_ADDRESS
+    TWITTER
+    FACEBOOK
+    WEBSITE
+    
+-- PROBLEM WITH SORTING BY ALPHABETICAL AND BY PRICE IN MENU --
+
+date("Y-m-d H:i:s")
+
+descriptionHeader
+hoursHeader
+businessInfoHeader
+contactHeader
+descriptionText
+hoursSpinner

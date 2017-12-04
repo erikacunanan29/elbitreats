@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/foodPrice"
+        android:layout_toStartOf="@+id/foodPrice" />
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/foodName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="25dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/foodCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="TextView"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="11dp"
+        android:layout_below="@+id/foodDescription"
+        android:layout_alignLeft="@+id/foodDescription"
+        android:layout_alignStart="@+id/foodDescription"
+        android:layout_alignRight="@+id/foodDescription"
+        android:layout_alignEnd="@+id/foodDescription" />
+
+    <TextView
+        android:id="@+id/foodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:text="TextView"
+        android:layout_below="@+id/foodName"
+        android:layout_alignLeft="@+id/foodName"
+        android:layout_alignStart="@+id/foodName"
+        android:layout_alignRight="@+id/foodPrice"
+        android:layout_alignEnd="@+id/foodPrice" />
+
+    <TextView
+        android:id="@+id/foodAdditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="TextView"
+        android:layout_marginBottom="11dp"
+        android:layout_below="@+id/foodCategory"
+        android:layout_alignLeft="@+id/foodCategory"
+        android:layout_alignStart="@+id/foodCategory"
+        android:layout_alignRight="@+id/foodCategory"
+        android:layout_alignEnd="@+id/foodCategory" />
+</RelativeLayout>

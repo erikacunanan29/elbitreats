@@ -1,0 +1,5 @@
+
+                                        intent.putExtra("restaurantid", resto.getString("restaurant_id"));
+                                        intent.putExtra("name", bundle.getString("name"));
+                                        intent.putExtra("userid", bundle.getInt("userid") + "");
+                                        intent.putExtra("restoName", resto.getString("name"));

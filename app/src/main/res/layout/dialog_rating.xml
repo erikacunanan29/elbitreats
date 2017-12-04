@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:clickable="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/ratingHeader"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:text="SAVE"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBaseline="@+id/removeButton"
+        android:layout_alignBottom="@+id/removeButton"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar" />
+
+    <Button
+        android:id="@+id/removeButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:text="Remove"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignRight="@+id/ratingBar"
+        android:layout_alignEnd="@+id/ratingBar" />
+
+    <TextView
+        android:id="@+id/ratingHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="20dp"
+        android:text="YOUR RATING: "
+        android:textSize="24sp" />
+</RelativeLayout>

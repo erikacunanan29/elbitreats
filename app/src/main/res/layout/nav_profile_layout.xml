@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/nameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorButtons"
+        android:drawableLeft="@drawable/ic_about_infoheader"
+        android:paddingLeft="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/historyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtons"
+        android:drawableLeft="@drawable/ic_about_visitedheader"
+        android:paddingLeft="30dp"
+        android:text="Recently Visited"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/nicknameGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameHeader"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/nickgenIcon"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nickgenIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nicknameGender"
+        android:drawableLeft="@drawable/ic_about_profile"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/nicknameGender" />
+
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nicknameGender"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/nicknameGender"
+        android:layout_below="@+id/nicknameGender"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bdayIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/birthday"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_about_birthday"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/birthday"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/birthday"
+        android:layout_alignStart="@+id/birthday" />
+
+    <TextView
+        android:id="@+id/emailIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailAddress"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_about_email"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailAddress"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/emailAddress"
+        android:layout_alignStart="@+id/emailAddress" />
+
+    <TextView
+        android:id="@+id/contactIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactNumber"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_about_contact"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactNumber"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/contactNumber"
+        android:layout_alignStart="@+id/contactNumber" />
+
+    <TextView
+        android:id="@+id/userIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/username"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_about_user"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="10dp"
+        android:password="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/passwordIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_about_password"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/visitedList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/historyHeader" />
+</RelativeLayout>
